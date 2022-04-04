@@ -7,14 +7,8 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV == 'production';
 
-
-<<<<<<< HEAD
-=======
 const stylesHandler = MiniCssExtractPlugin.loader;
 
-
-
->>>>>>> 1264ee1 (Update)
 const config = {
     entry: './src/index.js',
     output: {
