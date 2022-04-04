@@ -1,3 +1,15 @@
-# Responsive Club Website
+# 🚀 Welcome to your new awesome project!
 
-Build of club group page that will dynamically respond screen size is adjusted.
+This project has been created using **webpack-cli**, you can now run
+
+```
+npm run build
+```
+
+or
+
+```
+yarn build
+```
+
+to bundle your application

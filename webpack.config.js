@@ -8,6 +8,13 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const isProduction = process.env.NODE_ENV == 'production';
 
 
+<<<<<<< HEAD
+=======
+const stylesHandler = MiniCssExtractPlugin.loader;
+
+
+
+>>>>>>> 1264ee1 (Update)
 const config = {
     entry: './src/index.js',
     output: {
@@ -36,6 +43,10 @@ const config = {
             {
                 test: /\.styl$/i,
                 use: [stylesHandler, 'css-loader', 'postcss-loader', 'stylus-loader'],
+            },
+            {
+                test: /\.css$/i,
+                use: [stylesHandler, 'css-loader', 'postcss-loader'],
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
