@@ -27,5 +27,9 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4",
     "workbox-webpack-plugin": "^6.5.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "query": "^0.2.0"
   }
 }

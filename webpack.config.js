@@ -23,7 +23,7 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html',
+            template: './index.html',
         }),
 
         new MiniCssExtractPlugin(),
@@ -31,6 +31,12 @@ const config = {
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     ],
+    resolve: {
+        alias: {
+          "@": path.resolve(__dirname, "./src"),
+        },
+        extensions: ["*", ".js", ".jsx"],
+      },
     module: {
         rules: [
             {
@@ -58,9 +64,7 @@ const config = {
 
 module.exports = () => {
     if (isProduction) {
-        config.mode = 'production';
-        
-        
+        config.mode = 'production';  
         config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
         
     } else {
