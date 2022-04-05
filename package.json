@@ -29,7 +29,9 @@
     "workbox-webpack-plugin": "^6.5.2"
   },
   "dependencies": {
+    "html-entities": "^2.3.3",
     "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1",
     "query": "^0.2.0"
   }
 }
